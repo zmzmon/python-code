@@ -3,7 +3,7 @@ import pandas as pd
 
 # url = 'http://XXXX.cn/BullPoker/adm/listUser?currentPage=1&nickName=&userType=&pid=&agentId='
 urls = [
-    'http://sy.youmobeng.cn/BullPoker/adm/listUser?currentPage={}&nickName=&userType=&pid=&agentId='.format(number)
+    'http://xxxxx.cn/BullPoker/adm/listUser?currentPage={}&nickName=&userType=&pid=&agentId='.format(number)
     for number in range(0, 100)
 ]
 headers = {
