@@ -8,7 +8,7 @@ headers = {
 }
 cookies = {'ASP.NET_SessionId': '5o21lf55ohhulveflzr0zdav'}
 for i in range(64663):
-    url = 'http://8.135.30.80:8888/admin/user/users.aspx?action=edit&params=' + str(i + 300000)
+    url = 'http://0.0.0.0:8888/admin/user/users.aspx?action=edit&params=' + str(i + 300000)
     r = requests.get(url, cookies=cookies)
     f = open(str(i + 300000) + ".html", 'w', encoding='UTF-8')
     f.write(r.content.decode('UTF-8'))
