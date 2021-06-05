@@ -16,7 +16,7 @@ user_agent_list = [
 headers = {random.choice(user_agent_list)}
 cookies = {'JSESSIONID': 'C252C3A8C89A11E6BD415C1E0A033E22'}
 for i in range(8970):
-    url = 'http://sy.youmobeng.cn/BullPoker/adm/listUser?currentPage=' + str(i) + '&nickName=&userType=&pid=&agentId='
+    url = 'http://XXXX.cn/BullPoker/adm/listUser?currentPage=' + str(i) + '&nickName=&userType=&pid=&agentId='
     response = requests.get(url, cookies=cookies)
     f = open(str(i) + ".html", 'w', encoding='UTF-8')
     f.write(response.content.decode('UTF-8'))
